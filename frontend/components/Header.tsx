@@ -32,7 +32,7 @@ const Header: NextPage = () => {
   }, [isWeb3Enabled, getBalance]);
 
   return (
-    <nav className="py-3 border-b-2 border-emerald-500 flex flex-row items-center justify-center">
+    <nav className="py-3 border-b-2 border-black flex flex-row items-center justify-center">
       <Image src={Logo} alt="logo" width={50} height={50} />
       <h1 className="font-medium text-xl">Toffee Pets</h1>
       <div className="ml-10">TOF Balance: {balance}</div>

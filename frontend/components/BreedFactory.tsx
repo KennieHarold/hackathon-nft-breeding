@@ -200,7 +200,7 @@ const BreedFactory: NextPage = () => {
       </div>
 
       <button
-        className="mt-5 px-4 py-2 rounded bg-black text-white"
+        className="mt-5 px-4 py-2 rounded bg-emerald-500 text-white"
         onClick={handleBreed}
       >
         Breed for 5 TOF

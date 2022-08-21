@@ -106,7 +106,9 @@ const Card: NextPage<CardProps> = ({
       style={{ width }}
     >
       {sale ? (
-        <div className="mb-2 border-2 px-5 rounded-lg">{"10 TOF"}</div>
+        <div className="mb-2 border-2 border-black px-9 py-1 rounded-full text-black">
+          {"10 TOF"}
+        </div>
       ) : null}
 
       {name ? (
@@ -117,7 +119,7 @@ const Card: NextPage<CardProps> = ({
           onClick={handleGenerateImage}
           disabled={breeding}
         >
-          {breeding ? "Please wait until breeding is complete" : "Get Now!"}
+          {breeding ? "Breeding in progress" : "Get Now!"}
         </button>
       )}
 
@@ -138,7 +140,7 @@ const Card: NextPage<CardProps> = ({
       />
       {sale ? (
         <button
-          className="mt-5 px-4 py-2 rounded bg-black text-white"
+          className="mt-5 px-4 py-2 rounded bg-orange-500 text-white w-full"
           onClick={handlePurchase}
         >
           Purchase!
